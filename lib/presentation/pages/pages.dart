@@ -1,0 +1,22 @@
+import 'package:application_flm/cubit/cubit.dart';
+import 'package:application_flm/data/models/models.dart';
+import 'package:application_flm/data/services/services.dart';
+import 'package:application_flm/gen/assets.gen.dart';
+import 'package:application_flm/infrastructure/extensions/extensions.dart';
+import 'package:application_flm/infrastructure/theme/theme.dart';
+import 'package:application_flm/presentation/utils/utils.dart';
+import 'package:cached_network_image/cached_network_image.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:hidden_drawer_menu/hidden_drawer_menu.dart';
+import 'package:ionicons/ionicons.dart';
+import 'package:flare_flutter/flare_actor.dart';
+
+part 'main_page.dart';
+part 'home/home_page.dart';
+part 'whislist/whislist_page.dart';
+part 'settings/settings_page.dart';
+part 'splash_screen/splash_screen_page.dart';
+part 'drawer/drawer_page.dart';
+part 'category/category_page.dart';
+part 'detail/detail_page.dart';
