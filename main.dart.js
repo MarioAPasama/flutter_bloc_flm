@@ -26202,7 +26202,7 @@ zP(a){var s
 if(A.fn(a,0,null).gSJ())return A.HH(B.id,a,B.C,!1)
 s=this.ga1L()
 if(s==null)s=""
-return A.HH(B.id,s+("assets/"+a),B.C,!1)},
+return A.HH(B.id,s+("flutter_bloc_flm/assets/"+a),B.C,!1)},
 dl(a,b){return this.ajR(0,b)},
 ajR(a,b){var s=0,r=A.R(t.V4),q,p=2,o,n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$dl=A.M(function(a0,a1){if(a0===1){o=a1
@@ -33592,7 +33592,7 @@ q=A.oy().a
 q.w=r
 q.OJ()}i.ha(c,B.V.cf([A.a([!0],t.HZ)]))
 break}return
-case"flutter/assets":p=B.C.dg(0,A.cx(b.buffer,0,null))
+case"flutter/flutter_bloc_flm/assets":p=B.C.dg(0,A.cx(b.buffer,0,null))
 $.as4.dl(0,p).ff(new A.a63(i,c),new A.a64(i,c),t.P)
 return
 case"flutter/platform":s=B.aD.j_(b)
@@ -44437,7 +44437,7 @@ $2(a,b){var s,r
 if(b instanceof A.uX)if(!b.b){s=b.a
 r=s.length
 if(r!==0)return A.avU(B.hk,new A.a2e(s),r,B.cD,B.iC,!0)
-else return A.i9(A.el(A.avK("assets/rive/empty_not_found_404.flr",B.t,"idle",B.cv),260,260),null,null)}else return B.c1
+else return A.i9(A.el(A.avK("flutter_bloc_flm/assets/rive/empty_not_found_404.flr",B.t,"idle",B.cv),260,260),null,null)}else return B.c1
 else return B.c1},
 $S:423}
 A.a2e.prototype={
@@ -44595,7 +44595,7 @@ $2(a,b){var s,r
 if(b instanceof A.qn)if(!b.b){s=b.a
 r=s.length
 if(r!==0)return A.avU(B.hk,new A.a8z(s),r,B.cD,B.iC,!0)
-else return A.i9(A.el(A.avK("assets/rive/empty_not_found_404.flr",B.t,"idle",B.cv),260,260),null,null)}else return B.c1
+else return A.i9(A.el(A.avK("flutter_bloc_flm/assets/rive/empty_not_found_404.flr",B.t,"idle",B.cv),260,260),null,null)}else return B.c1
 else return B.c1},
 $S:449}
 A.a8z.prototype={
@@ -44663,7 +44663,7 @@ A.bq(a,!1,s).yU(a)
 r=t.w
 q=a.N(r).f
 r=a.N(r).f
-p=A.a3p(o,new A.tt("assets/images/Splash.png",o,o),o)
+p=A.a3p(o,new A.tt("flutter_bloc_flm/assets/images/Splash.png",o,o),o)
 return A.oc(o,o,A.bN(o,A.iT(new A.aiz(),s,t.oy),o,o,new A.ct(B.CJ,p,o,o,o,o,B.L),q.a.b,o,o,r.a.a),o)}}
 A.aiz.prototype={
 $2(a,b){var s,r=null
@@ -44682,9 +44682,9 @@ A.bq(a,!1,t.tS).Rk()
 s=A.avf(n,n,n,n,n,A.eV("Support Me",n,n,n,n,n,n))
 r=A.aCN(B.Rm,new A.aj3(a),n)
 q=t.p
-p=A.lY(A.a([A.el(A.aB3("assets/images/coffee.png",n),60,60),B.xB,B.Ru],q),B.ah,B.b7,B.ar)
+p=A.lY(A.a([A.el(A.aB3("flutter_bloc_flm/assets/images/coffee.png",n),60,60),B.xB,B.Ru],q),B.ah,B.b7,B.ar)
 o=A.avC(n,n,B.Kf,n,n,n,n,n,n,n,n,n,n,n,new A.dc(A.h3(20),B.q),n,n,n,n)
-return A.oc(s,n,A.BG(A.a([B.Rn,B.Rx,r,B.lP,B.lP,p,A.aAq(A.lY(A.a([A.aB3("assets/images/trbtn-icon.png",6),B.xB,B.Rv],q),B.ah,B.cN,B.ar),new A.aj4(a),o)],q),n,B.Eh,n,!1),n)}}
+return A.oc(s,n,A.BG(A.a([B.Rn,B.Rx,r,B.lP,B.lP,p,A.aAq(A.lY(A.a([A.aB3("flutter_bloc_flm/assets/images/trbtn-icon.png",6),B.xB,B.Rv],q),B.ah,B.cN,B.ar),new A.aj4(a),o)],q),n,B.Eh,n,!1),n)}}
 A.aj3.prototype={
 $0(){return A.bq(this.a,!1,t.Q).lg(!0,u.o)},
 $S:0}
@@ -44702,7 +44702,7 @@ $2(a,b){var s,r
 if(b instanceof A.BC){s=b.a
 r=s.length
 if(r!==0)return A.avU(B.hk,new A.akQ(s),r,B.cD,B.iC,!0)
-else return A.i9(A.el(A.avK("assets/rive/empty_not_found_404.flr",B.t,"idle",B.cv),260,260),null,null)}else return B.c1},
+else return A.i9(A.el(A.avK("flutter_bloc_flm/assets/rive/empty_not_found_404.flr",B.t,"idle",B.cv),260,260),null,null)}else return B.c1},
 $S:469}
 A.akQ.prototype={
 $2(a,b){return new A.n_(this.a[b],null)},
@@ -68662,7 +68662,7 @@ while(true)switch(s){case 0:o=B.cy.cL(A.arA(A.HH(B.id,b,B.C,!1),null).e)
 n=$.fg.bA$
 n===$&&A.b()
 s=3
-return A.K(n.vi(0,"flutter/assets",A.kj(o.buffer,0,null)),$async$dl)
+return A.K(n.vi(0,"flutter/flutter_bloc_flm/assets",A.kj(o.buffer,0,null)),$async$dl)
 case 3:p=d
 if(p==null)throw A.c(A.AA("Unable to load asset: "+b))
 q=p
