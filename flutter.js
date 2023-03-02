@@ -13,7 +13,7 @@ if (!_flutter) {
 }
 _flutter.loader = null;
 
-(function() {
+(function () {
   "use strict";
   class FlutterLoader {
     /**
@@ -42,7 +42,7 @@ _flutter.loader = null;
      */
     loadEntrypoint(options) {
       const {
-        entrypointUrl = "flutter_bloc_flm/main.dart.js",
+        entrypointUrl = "main.dart.js",
         serviceWorker,
       } = (options || {});
       return this._loadWithServiceWorker(entrypointUrl, serviceWorker);
@@ -113,34 +113,34 @@ _flutter.loader = null;
         timeoutMillis = 4000,
       } = serviceWorkerOptions;
 
-      let serviceWorkerUrl = "flutter_bloc_flm/flutter_service_worker.js?v=" + serviceWorkerVersion;
+      let serviceWorkerUrl = "flutter_service_worker.js?v=" + serviceWorkerVersion;
       let loader = navigator.serviceWorker.register(serviceWorkerUrl)
-          .then((reg) => {
-            if (!reg.active && (reg.installing || reg.waiting)) {
-              // No active web worker and we have installed or are installing
-              // one for the first time. Simply wait for it to activate.
-              let sw = reg.installing || reg.waiting;
+        .then((reg) => {
+          if (!reg.active && (reg.installing || reg.waiting)) {
+            // No active web worker and we have installed or are installing
+            // one for the first time. Simply wait for it to activate.
+            let sw = reg.installing || reg.waiting;
+            return this._waitForServiceWorkerActivation(sw, entrypointUrl);
+          } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+            // When the app updates the serviceWorkerVersion changes, so we
+            // need to ask the service worker to update.
+            console.debug("New service worker available.");
+            return reg.update().then((reg) => {
+              console.debug("Service worker updated.");
+              let sw = reg.installing || reg.waiting || reg.active;
               return this._waitForServiceWorkerActivation(sw, entrypointUrl);
-            } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
-              // When the app updates the serviceWorkerVersion changes, so we
-              // need to ask the service worker to update.
-              console.debug("New service worker available.");
-              return reg.update().then((reg) => {
-                console.debug("Service worker updated.");
-                let sw = reg.installing || reg.waiting || reg.active;
-                return this._waitForServiceWorkerActivation(sw, entrypointUrl);
-              });
-            } else {
-              // Existing service worker is still good.
-              console.debug("Loading app from service worker.");
-              return this._loadEntrypoint(entrypointUrl);
-            }
-          })
-          .catch((error) => {
-            // Some exception happened while registering/activating the service worker.
-            console.warn("Failed to register or activate service worker:", error);
+            });
+          } else {
+            // Existing service worker is still good.
+            console.debug("Loading app from service worker.");
             return this._loadEntrypoint(entrypointUrl);
-          });
+          }
+        })
+        .catch((error) => {
+          // Some exception happened while registering/activating the service worker.
+          console.warn("Failed to register or activate service worker:", error);
+          return this._loadEntrypoint(entrypointUrl);
+        });
 
       // Timeout race promise
       let timeout;
